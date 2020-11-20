@@ -49,8 +49,8 @@ function palindrome(input) {
     let rvrStr = reverseString(input);
 
     if (rvrStr == input)
-    {return "true";}
-    else {return "false";}
+    {return true;}
+    else {return false;}
 }
 
 let tacoCat = "tacocat";
