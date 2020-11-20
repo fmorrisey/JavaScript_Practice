@@ -1,5 +1,5 @@
 "use strict";
-// Hellow WORLD REVERSED STRING
+// Hello WORLD REVERSED STRING
 function reverseString(str){
     let newString = "";
 
@@ -20,12 +20,12 @@ function compressedString(uncompressedString){
 
     for (let i = 0; i <= uncompressedString.length; i++)
     {
-        if (i == uncompressedString.length - 1)
+        if (i === uncompressedString.length - 1)
         {
             compressedString += uncompressedString[i];
             compressedString += letterCounter;
         }
-            else if (uncompressedString[i] == uncompressedString[i + 1])
+            else if (uncompressedString[i] === uncompressedString[i + 1])
         {
             letterCounter++;
         }
@@ -42,7 +42,7 @@ function compressedString(uncompressedString){
 }
 
 let cmpsStr = compressedString("aaabbbbbccccaacccbbbaaabbbaaa");
-
+alert(cmpsStr);
 
 
 function palindrome(input) {
@@ -56,4 +56,5 @@ function palindrome(input) {
 let tacoCat = "tacocat";
 
 alert(palindrome(tacoCat));
+
 
