@@ -1,5 +1,7 @@
 "use strict";
 
+// Problem 1: Happy Numbers
+
 function isHappy(n) {
     if (n === 4) return false;
     const u = n.toString().split('').reduce(((ac,cv) => ac + Math.pow(cv,2)), 0);
@@ -12,6 +14,8 @@ console.log(result);
 
 result = isHappy(4);
 console.log(result);
+
+// Problem 2: Prime Numbers
 
 function primeCheck(integer) {
     let isPrime = true;
@@ -42,3 +46,23 @@ function primeSearcher(repeatInt) {
 }
 
 primeSearcher(100);
+
+// Problem 3: Fibonacci Sequence
+function fibonacci(n) {
+    var previous_first = 0;
+    var previous_second = 1;
+    var next = 1;
+
+    for (let i = 2; i < n; i++) {
+        next = previous_first  + previous_second;
+        previous_first = previous_second;
+        previous_second = next;
+        console.log(next);
+    }
+    return next;
+}
+
+
+fibonacci(100);
+
+

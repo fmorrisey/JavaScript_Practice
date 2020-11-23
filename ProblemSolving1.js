@@ -1,5 +1,5 @@
 "use strict";
-// Hello WORLD REVERSED STRING
+// Problem 1: Hello WORLD REVERSED STRING
 function reverseString(str){
     let newString = "";
 
@@ -13,6 +13,7 @@ function reverseString(str){
 let str = "lowercase?"
 str = str.toUpperCase();
 
+// Problem 2: Compressed String
 function compressedString(uncompressedString){
        
     let compressedString = "";
@@ -41,10 +42,10 @@ function compressedString(uncompressedString){
     return compressedString;
 }
 
-let cmpsStr = compressedString("aaabbbbbccccaacccbbbaaabbbaaa");
-alert(cmpsStr);
+let compsStr = compressedString("aaabbbbbccccaacccbbbaaabbbaaa");
+alert(compsStr);
 
-
+// Problem 3: Palindrome 
 function palindrome(input) {
     let rvrStr = reverseString(input);
 
