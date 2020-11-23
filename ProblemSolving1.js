@@ -10,10 +10,12 @@ function reverseString(str){
     return newString;
 }
 
+
+// Problem 2: Uppercase
 let str = "lowercase?"
 str = str.toUpperCase();
 
-// Problem 2: Compressed String
+// Problem 3: Compressed String
 function compressedString(uncompressedString){
        
     let compressedString = "";
@@ -45,7 +47,7 @@ function compressedString(uncompressedString){
 let compsStr = compressedString("aaabbbbbccccaacccbbbaaabbbaaa");
 alert(compsStr);
 
-// Problem 3: Palindrome 
+// Problem 4: Palindrome 
 function palindrome(input) {
     let rvrStr = reverseString(input);
 
